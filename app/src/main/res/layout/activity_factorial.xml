@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".FactorialActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Your Factorials Here!"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/textedit_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/radio_mj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="factorical MathJS" />
+
+        <RadioButton
+            android:id="@+id/radio_jr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="factorical Java Recursive" />
+
+        <RadioButton
+            android:id="@+id/radio_ji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="factorical Java Iterative" />
+
+        <RadioButton
+            android:id="@+id/radio_nr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="factorical Native Recursive" />
+
+        <RadioButton
+            android:id="@+id/radio_ni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="factorical Native Iterative" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get factorial result" />
+
+        <TextView
+            android:id="@+id/textview_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+</LinearLayout>
